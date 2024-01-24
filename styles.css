@@ -1,3 +1,18 @@
+
+
+.logo {
+    max-width: 150px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+.logo img {
+    max-width: 75%;
+    height: auto;
+    display: block; /* Remove extra space below the image */
+}
+
+
+
 /* Additional styles for the product cards */
 .product-card {
     border: 1px solid #ddd; border: 1;
