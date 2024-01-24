@@ -1,0 +1,41 @@
+/* Additional styles for the product cards */
+.product-card {
+    border: 1px solid #ddd; border: 1;
+
+    padding: 15px
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    max-width: 25%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.brand-name {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.color-circles {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    /* Add background color or background image for each color */
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff; /* Adjust color based on your design */
+}
