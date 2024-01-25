@@ -1,4 +1,6 @@
-
+head {
+    
+}
 header {
     background-color: #0a364134;
     padding: 20px 2%; 
@@ -6,8 +8,20 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    border-bottom: 1px solid #ccc; 
-    padding: 2% 2%;
+    border-bottom: 1px solid #c0A3641c; 
+}
+
+body {
+    background-color: #c3cdcdcf;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* Regular */
+    margin: 2px
+}
+h1 {
+    font-weight: 700; /* Bold */
+}
+p {
+    font-weight: 300; /* Light */
 }
 
 .nav {
@@ -18,13 +32,13 @@ header {
 
 .left-nav, .right-nav {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center; 
 }
 
 .left-nav {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center; 
     justify-content: flex-start; 
 }
@@ -32,7 +46,7 @@ header {
 .left-nav ul {
     list-style: none;
     margin: 0;
-    padding: 20;
+    padding: 0;
     display: flex;
     gap: 10px;
 }
@@ -44,24 +58,29 @@ header {
 
 
 .logo {
-    flex-shrink: 0; /* Prevent logo from shrinking */
-    max-width: 200px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the logo horizontally */
+    flex-shrink: 0; 
+    max-width: 200px; 
+    margin: 0 auto; 
+    gap: 0px;
 }
 
 .logo img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     display: block; 
+    gap: 0px;
 }
 
 .icons {
     display: flex;
     gap: 20px;
+    max-width: 100%;
 }
 
+
 .icon img {
-    max-width: 100%;
+    width: 30px; 
+    height: auto;
 }
 
 /* Categories Section Styles */
@@ -70,15 +89,15 @@ header {
     justify-content: space-between;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 15px;
+    padding: 1px;
 }
 
 .category {
     flex-grow: 1;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Hide overflowing content, including background image */
-    border-right: 1px solid #ccc; /* Add a right border between categories */
+    overflow: hidden; 
+    border-right: 1px solid #ccc; 
 }
 
 .category:last-child {
@@ -99,12 +118,12 @@ nav ul {
 }
 
 nav li {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 nav a {
     display: block;
-    padding: 37px;
+    padding: 10px;
     background-color: rgba(0, 123, 255, 0);
     color: #0A3641;
     text-decoration: none;
@@ -114,37 +133,49 @@ nav a {
 /* Category Background Images */
 .category:nth-child(1) {
     background: url('shop_by_activity_03.jpg') center/cover no-repeat;
+    max-width: 400px;
 }
 
 .category:nth-child(2) {
     background: url('shop_by_category_03.jpg') center/cover no-repeat;
+    max-width: 400px;
 }
 
 .category:nth-child(3) {
     background: url('shop_by_season_03.jpg') center/cover no-repeat;
+    max-width: 400px;
 }
 
 /* Product Card Styles */
+
+.product-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure that the items stay in a single row without wrapping */
+    overflow-x: auto; /* Add horizontal scrolling if the content overflows */
+}
 .product-card {
-    border: 1px solid #ddd; /* Adjust border color */
+    border: 1px solid #0a364123; /* Adjust border color */
     font-family: 'Inter', sans-serif;
-    padding: 15px;
+    padding: 0px;
     margin-bottom: 20px;
+    flex: 0 0 auto; /* Allow the product cards to grow and shrink as needed */
+    margin-right: 5px; /* Add spacing between the cards, adjust as needed */
 }
 
 .product-card img {
-    max-width: 25%;
+    max-width: 250px;
     height: auto;
 }
 
 .product-name {
+    color: #0A3641;
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 .brand-name {
-    color: #666;
+    color: #0a364174;
     margin-bottom: 10px;
 }
 
@@ -166,4 +197,86 @@ nav a {
     color: #0A3641; 
 }
 
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Set a height if needed */
+}
 
+/* Footer Styles */
+footer {
+    border-bottom: 1px solid #c0A3641c; 
+    background-color: #5C6C72;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    position: relative; 
+}
+
+.logo-section {
+    position: absolute;
+    bottom: 0; 
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+}
+
+/* Footer Sections */
+section {
+    text-align: center;
+}
+
+/* Heading Styles */
+section h5 {
+    margin-bottom: 10px;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links in Lists Styles */
+li {
+    margin-bottom: 8px;
+}
+
+/* Social Links */
+.socials-section a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.socials-section a:hover {
+    color: #0A3641; /* Change color on hover, adjust as needed */
+}
+
+/* Coming Soon Section Styles */
+.coming-soon-section {
+    
+    background-color: #f8f8f800;
+    padding: 20px;
+    text-align: center;
+}
+
+.center-container {
+    margin-bottom: 20px;
+}
+
+/* Image Container Styles */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container img {
+    border: 1px solid #0a3641;
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px; /* Add margin between images */
+}

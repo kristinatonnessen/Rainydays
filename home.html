@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainydays</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icons/mountain_96x96.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
 </head>
 
 <body>
-    <header>
+    <header class="center-container">
         <nav class="nav">
             <ul class="left-nav">
                 <li><a href="#">HOME</a></li>
@@ -29,8 +29,8 @@
             </ul>            
         
             <div class="icons">
-                <a href="#" class="icon"><img src="/icons/Profile_32x32_02.png" alt="Profile Icon" /></a>
-                <a href="#" class="icon"><img src="/icons/Cart_32x32_02.png" alt="Shopping Cart Icon" /></a>
+                <a href="#" class="icon"><img src="/icons/profile_96x96_03.png" alt="Profile Icon" /></a>
+                <a href="#" class="icon"><img src="/icons/cart_96x96_02.png" alt="Shopping Cart Icon" /></a>
             </div>
         </nav>
     </header>
@@ -45,14 +45,24 @@
             </nav>
         </div>        
         
-        <div><h2>Pushing the comfort zone</h2></div>
+        <div class="center-container"><h2>Pushing the comfort zone</h2></div>
         
         <section class="categories-section">
             <div class="category">
                 <nav>
                     <ul>
                         <li><a href="#">shop by activity</a></li>
+                    </ul>
+                </nav>
+            <div class="category">
+                <nav>
+                    <ul>
                         <li><a href="#">shop by category</a></li>
+                    </ul>
+                </nav>
+            <div class="category">
+                <nav>
+                    <ul>
                         <li><a href="#">shop by season</a></li>
                     </ul>
                 </nav>
@@ -61,9 +71,8 @@
         
 
         <section class="product-section">
-            <h2>MENS JACKETS</h2>
+            <h2 class="center-container">MENS JACKETS</h2>
             <div class="product-container">
-                <!-- Repeat product cards as needed -->
                 <div class="product-card">
                     <img src="Mens Jackets/Rocket_jacket_05.jpg" alt="Rocket Jacket">
                     <h3 class="product-name">Rocket Jacket</h3>
@@ -71,7 +80,7 @@
                     <div class="color-circles"></div>
                     <p class="price">1990 kr.</p>
                 </div>
-
+            <div class="product-container">
                 <div class="product-card">
                     <img src="/Mens Jackets/Boarding_Jacket_02.jpg" alt="Boarding Jacket">
                     <h3 class="product-name">Boarding Jacket</h3>
@@ -79,7 +88,7 @@
                     <div class="color-circles"></div>
                     <p class="price">1990 kr.</p>
                 </div>
-
+            </div>
                 <div class="product-card">
                     <img src="/Mens Jackets/Drop_Jacket_02.jpg" alt="Drop Jacket">
                     <h3 class="product-name">Drop Jacket</h3>
@@ -104,16 +113,76 @@
                     <p class="price">1990 kr.</p>
                 </div>
             </div>
-            <button class="show-more-button">SHOW MORE</button>
+            <div class="center-container">
+                <button>SHOW MORE</button>
+            </div>
         </section>
 
-        <!-- Repeat similar structure for WOMENS JACKETS, text section, and COMING SOON section -->
+        <section class="product-section">
+            <h2 class="center-container">WOMENS JACKETS</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="/Womens Jackets/Bomb_Jacket_02.jpg" alt="Rocket Jacket">
+                    <h3 class="product-name">Rocket Jacket</h3>
+                    <p class="brand-name">RAINYDAYS</p>
+                    <div class="color-circles"></div>
+                    <p class="price">1990 kr.</p>
+                </div>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="/Womens Jackets/Braid_Jacket_02.jpg" alt="Boarding Jacket">
+                    <h3 class="product-name">Boarding Jacket</h3>
+                    <p class="brand-name">RAINYDAYS</p>
+                    <div class="color-circles"></div>
+                    <p class="price">1990 kr.</p>
+                </div>
+            </div>
+                <div class="product-card">
+                    <img src="/Womens Jackets/Frost_Jacket_02.jpg" alt="Drop Jacket">
+                    <h3 class="product-name">Drop Jacket</h3>
+                    <p class="brand-name">RAINYDAYS</p>
+                    <div class="color-circles"></div>
+                    <p class="price">1990 kr.</p>
+                </div>
 
+                <div class="product-card">
+                    <img src="/Womens Jackets/Haze_Jacket_02.jpg" alt="Pump Jacket">
+                    <h3 class="product-name">Pump Jacket</h3>
+                    <p class="brand-name">RAINYDAYS</p>
+                    <div class="color-circles"></div>
+                    <p class="price">1990 kr.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="/Womens Jackets/Nordic_Jacket_02.jpg" alt="Sway Jacket">
+                    <h3 class="product-name">Sway Jacket</h3>
+                    <p class="brand-name">RAINYDAYS</p>
+                    <div class="color-circles"></div>
+                    <p class="price">1990 kr.</p>
+                </div>
+            </div>
+            <div class="center-container">
+                <button>SHOW MORE</button>
+            </div>
+        </section>
+
+        <section class="coming-soon-section">
+            <div class="center-container">
+                <h2>COMING SOON</h2>
+            </div>
+            <div class="image-container">
+                <img src="coming_soon_05.jpg" alt="Dog in Backpack">
+                <img src="coming_soon_06.jpg" alt="Cat in Backpack">
+                <img src="coming_soon_07.jpg" alt="Dog Wearing Backpack">
+                <img src="coming_soon_08.jpg" alt="Hiking Backpack">
+            </div>
+        </section>
+        
     </main>
 
     <footer>
         <section class="contact-section">
-            <h5>Contact</h5>
+            <h5>CONTACT</h5>
             <address>
                 <p>Email: <a href="mailto:info@rainydays.com">info@rainydays.com</a></p>
                 <p>Call: (123) 456-7890</p>
@@ -123,7 +192,7 @@
         </section>
     
         <section class="about-section">
-            <h5>About</h5>
+            <h5>ABOUT</h5>
             <ul>
                 <li><a href="/environment">Environment</a></li>
                 <li><a href="/founder">Founder</a></li>
@@ -138,7 +207,7 @@
         </section>
     
         <section class="rainydays-section">
-            <h5>RainyDays</h5>
+            <h5>RAINYDAYS</h5>
             <ul>
                 <li><a href="/community">Community</a></li>
                 <li><a href="/newsletter">Newsletter</a></li>
@@ -147,7 +216,7 @@
         </section>
     
         <section class="socials-section">
-            <h5>Socials</h5>
+            <h5 font-weight: 300>SOCIALS</h5>
             <ul>
                 <li><a href="https://www.instagram.com/rainydays/" target="_blank">Instagram</a></li>
                 <li><a href="https://www.facebook.com/rainydays/" target="_blank">Facebook</a></li>
