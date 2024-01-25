@@ -1,4 +1,43 @@
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Optional border for separation */
+}
+
+.left-nav,
+.right-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.left-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.left-nav a {
+    text-decoration: none;
+    color: #0A3641; /* Adjust link color as needed */
+}
+
+.logo {
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon img {
+    max-width: 100%; /* Ensure the icons don't exceed their container */
+}
 
 .logo {
     max-width: 150px; /* Adjust the maximum width as needed */
@@ -13,10 +52,68 @@
 
 
 
+.categories-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.category {
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hide overflowing content, including background image */
+    border-right: 1px solid #ccc; /* Add a right border between categories */
+}
+
+.category:last-child {
+    border-right: none; /* Remove right border for the last category */
+}
+
+.category h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 37px;
+    background-color: rgba(0, 123, 255, 0);
+    color: #0A3641;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.category:nth-child(1) {
+    background: url('shop_by_activity_03.jpg') center/cover no-repeat;
+}
+
+.category:nth-child(2) {
+    background: url('shop_by_category_03.jpg') center/cover no-repeat;
+}
+
+.category:nth-child(3) {
+    background: url('shop_by_season_03.jpg') center/cover no-repeat;
+}
+
 /* Additional styles for the product cards */
 .product-card {
     border: 1px solid #ddd; border: 1;
-
+    font-family: 'Inter', sans-serif;
     padding: 15px
     margin-bottom: 20px;
 }
@@ -52,5 +149,6 @@
 
 .price {
     font-weight: bold;
-    color: #007bff; /* Adjust color based on your design */
+    color: #0A3641; /* Adjust color based on your design */
 }
+

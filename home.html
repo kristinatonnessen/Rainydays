@@ -6,12 +6,13 @@
     <title>Rainydays</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icons/mountain_96x96.png"
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="left-nav">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">SHOP</a></li>
@@ -23,18 +24,18 @@
         <div class="logo">
             <img src="/Rainydays_Logo_Cut.png" alt="Logo for header" class="logo-image" />
         </div>
-        
-
-        <nav>
+    
+        <nav class="right-nav">
             <button>LOGIN</button>
-            <button>SIGN IN</button>
+            <button>SIGN UP</button>
         </nav>
-
+    
         <div class="icons">
             <a href="#" class="icon"><img src="icons/Profile_32x32.png" alt="Profile Icon" /></a>
             <a href="#" class="icon"><img src="icons/Cart_32x32.png" alt="Shopping Cart Icon" /></a>
         </div>
     </header>
+    
 
     <main>
         <div class="ad-container">
@@ -45,55 +46,57 @@
                 <button>SIGN IN</button>
             </nav>
         </div>        
-
-        <section>
-            <div>
-                <h2>Pushing the comfort zone</h2>
+        
+        <div><h2>Pushing the comfort zone</h2></div>
+        
+        <section class="categories-section">
+            <div class="category">
+                
                 <nav>
-                    <li>shop by activity</li>
-                    <!--background picture man foggy mountain-->
-                    <li>shop by category</li>
-                    <!--background picture repelling down mountainside waterfall-->
-                    <li>shop by season</li>
-                    <!--background picture still water rowing-->
+                    <ul>
+                        <li><a href="#">shop by activity</a></li>
+                        <li><a href="#">shop by category</a></li>
+                        <li><a href="#">shop by season</a></li>
+                    </ul>
                 </nav>
             </div>
         </section>
+        
 
         <section class="mens-jackets-section">
             <h2>MENS JACKETS</h2>
             <link rel="stylesheet" href="style.css">
             <div class="product-container">
                 <div class="product-card">
-                    <img src="Mens Jackets/Rocket_Jacket_01.jpeg" alt="Rocket Jacket">
+                    <img src="Mens Jackets/Rocket_jacket_05.jpg" alt="Rocket Jacket">
                     <h3 class="product-name">Rocket Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
                     <p class="price">1990 kr.</p>
                 </div>
                 <div class="product-card">
-                    <img src="Mens Jackets/Pump_Jacket_01.jpeg" alt="Pump Jacket">
+                    <img src="Mens Jackets/Pump_Jacket_02.jpg" alt="Pump Jacket">
                     <h3 class="product-name">Pump Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
                     <p class="price">1590 kr.</p>
                 </div>
                 <div class="product-card">
-                    <img src="Mens Jackets/Boarding_Jacket_01.jpeg" alt="Boarding Jacket">
+                    <img src="Mens Jackets/Boarding_Jacket_02.jpg" alt="Boarding Jacket">
                     <h3 class="product-name">Boarding Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
                     <p class="price">2490 kr.</p>
                 </div>
                 <div class="product-card">
-                    <img src="Mens Jackets/Drop_Jacket_01.jpeg" alt="Drop Jacket">
+                    <img src="Mens Jackets/Drop_Jacket_02.jpg" alt="Drop Jacket">
                     <h3 class="product-name">Drop Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
                     <p class="price">1990 kr.</p>
                 </div>
                 <div class="product-card">
-                    <img src="Mens Jackets/Sway_Jacket_01.jpeg" alt="Sway Jacket">
+                    <img src="Mens Jackets/Sway_Jacket_02.jpg" alt="Sway Jacket">
                     <h3 class="product-name">Sway Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
@@ -107,35 +110,35 @@
             <h2>WOMENS JACKETS</h2>
             <div class="product-container">
                 <div class="product-card">
-                    <img src="product1.jpg" alt="Product 1">
+                    <img src="/Womens Jackets/Bomb_Jacket_02.jpg" alt="Bomb Jacket">
                     <h3 class="product-name">Frost Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
                     <p class="price">1990 kr.</p>
                 </div>
                 <div class="product-card">
-                    <img src="product2.jpg" alt="Product 2">
+                    <img src="/Womens Jackets/Braid_Jacket_02.jpg" alt="Braid Jacket">
                     <h3 class="product-name">Braid Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
                     <p class="price">1990 kr.</p>
                 </div>
                 <div class="product-card">
-                    <img src="product3.jpg" alt="Product 3">
+                    <img src="/Womens Jackets/Frost_Jacket_02.jpg" alt="Frost Jacket">
                     <h3 class="product-name">Bomb Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
                     <p class="price">1990 kr.</p>
                 </div>
                 <div class="product-card">
-                    <img src="product4.jpg" alt="Product 4">
+                    <img src="/Womens Jackets/Haze_Jacket_02.jpg" alt="Haze Jacket">
                     <h3 class="product-name">Haze Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
                     <p class="price">1990 kr.</p>
                 </div>
                 <div class="product-card">
-                    <img src="product5.jpg" alt="Product 5">
+                    <img src="/Womens Jackets/Nordic_Jacket_02.jpg" alt="Nordic Jacket">
                     <h3 class="product-name">Nordic Jacket</h3>
                     <p class="brand-name">RAINYDAYS</p>
                     <div class="color-circles"></div> <!--add 5 circles and "+2"-->
@@ -185,7 +188,9 @@
         </section>
     
         <section>
-            <img src="Rainydays/RainyDays_Logo.jpg" alt="RainyDays Logo" />
+            <div class="logo">
+            <img src="/RainyDays_Logo.png" alt="RainyDays Logo" />
+            </div>
         </section>
     
         <section>
