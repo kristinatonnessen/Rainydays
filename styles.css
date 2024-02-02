@@ -1,12 +1,13 @@
 
 header {
     background-color: #0a364134;
-    padding: 20px 2%; 
-    display: flex;
+    padding: 8px 2%; 
+    display: inline;
     justify-content: space-between;
     align-items: center;
     font-family: 'Inter', sans-serif;
     border-bottom: 1px solid #c0A3641c; 
+    margin: 0;
 }
 
 body {
@@ -63,9 +64,9 @@ p {
 }
 
 .logo img {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
-    display: block; 
+    display: float; 
     gap: 0px;
 }
 
@@ -79,6 +80,46 @@ p {
 .icon img {
     width: 30px; 
     height: auto;
+}
+
+/* AD CONTAINER */
+.ad-container {
+    background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
+    text-align: left;
+    color: #0A3641; 
+    padding: 100px;
+    margin-top: 0;
+}
+
+h1 {
+    font-weight: bold; /* Make h1 bold */
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    font-weight: lighter; /* Make h2 light */
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+nav {
+    margin-top: 20px; /* Add margin to the navigation for spacing */
+}
+
+.ad-button {
+    background-color: #0a36415f; /* Button background color */
+    color: #0A3641; /* Button text color */
+    padding: 10px 20px; /* Adjust padding for the button */
+    font-size: 25px; /* Adjust font size for the button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add pointer cursor on hover */
+    border-radius: 5px;
+}
+
+.ad-button:hover {
+    background-color: #0a364195; /* Change background color on hover */
 }
 
 /* Categories Section Styles */
@@ -130,17 +171,17 @@ nav a {
 
 /* Category Background Images */
 .category:nth-child(1) {
-    background: url('shop_by_activity_03.jpg') center/cover no-repeat;
+    background: url('/images/shop_by_activity_03.jpg') center/cover no-repeat;
     max-width: 400px;
 }
 
 .category:nth-child(2) {
-    background: url('shop_by_category_03.jpg') center/cover no-repeat;
+    background: url('/images/shop_by_category_03.jpg') center/cover no-repeat;
     max-width: 400px;
 }
 
 .category:nth-child(3) {
-    background: url('shop_by_season_03.jpg') center/cover no-repeat;
+    background: url('/images/shop_by_season_03.jpg') center/cover no-repeat;
     max-width: 400px;
 }
 
@@ -195,11 +236,38 @@ nav a {
     color: #0A3641; 
 }
 
+button {
+    background-color: #0a364100;
+    color: #0A3641;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: 10px;
+    stroke: linecap 1px;
+    border-color: #0A3641;
+    cursor: pointer;
+    border-radius: 8px; /* Adjust the value to make corners rounder */
+}
+
+button:hover {
+    background-color: #0a364135;
+}
+
 .center-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px; /* Set a height if needed */
+}
+
+/* Coming Soon Section Styles */
+.coming-soon-section {
+    background-color: #f8f8f800;
+    padding: 20px;
+    text-align: center;
+}
+
+.center-container {
+    margin-bottom: 20px;
 }
 
 /* Footer Styles */
@@ -253,17 +321,6 @@ li {
     color: #0A3641; /* Change color on hover, adjust as needed */
 }
 
-/* Coming Soon Section Styles */
-.coming-soon-section {
-    
-    background-color: #f8f8f800;
-    padding: 20px;
-    text-align: center;
-}
-
-.center-container {
-    margin-bottom: 20px;
-}
 
 /* Image Container Styles */
 .image-container {
