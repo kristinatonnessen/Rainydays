@@ -1,29 +1,36 @@
-.container {
+
+.container{
     display: flex;
     flex-direction: column;
-}
-
+  }
+  
 .item {
     flex: 1;
     padding: 10px;
     margin: 10px;
   }
   
-  .one {
-    background-image: url(images/shop_by_activity_03.jpg);
+.one {
+    background-color: #ffffff00;
   }
   
-  .two {
-    background-image: url(images/shop_by_category_03.jpg);
+.two {
+    background-color: #ffffff00;
   }
   
-  .three {
-    background-image: url(images/shop_by_season_03.jpg);
+.three {
+    background-color: #ffffff00;
+  }
+  
+.four {
+    background-color: #ffffff00;
   }
 
-
+.five {
+    background-color: #ffffff00;
+  }
   @media only screen and (min-width: 600px){
-    .container{
-        flex-direction: row;
-    }
+      .container {
+          flex-direction: row;
+      }
   }
