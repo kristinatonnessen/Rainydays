@@ -1,6 +1,4 @@
-head {
-    
-}
+
 header {
     background-color: #0a364134;
     padding: 20px 2%; 
@@ -18,7 +16,7 @@ body {
     margin: 2px
 }
 h1 {
-    font-weight: 700; /* Bold */
+    font-weight: 300; /* Bold */
 }
 p {
     font-weight: 300; /* Light */
@@ -208,7 +206,7 @@ nav a {
 footer {
     border-bottom: 1px solid #c0A3641c; 
     background-color: #5C6C72;
-    padding: 0px;
+    padding: 2px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
