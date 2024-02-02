@@ -170,23 +170,37 @@ nav a {
 }
 
 /* Category Background Images */
-.category:nth-child(1) {
-    background: url('/images/shop_by_activity_03.jpg') center/cover no-repeat;
-    max-width: 400px;
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
-.category:nth-child(2) {
-    background: url('/images/shop_by_category_03.jpg') center/cover no-repeat;
-    max-width: 400px;
-}
+.item {
+    flex: 1;
+    padding: 20px;
+    margin: 1px;
+  }
+  
+  .activity {
+    background-image: url(images/shop_by_activity_03.jpg);
+  }
+  
+  .category {
+    background-image: url(images/shop_by_category_03.jpg);
+  }
+  
+  .season {
+    background-image: url(images/shop_by_season_03.jpg);
+  }
 
-.category:nth-child(3) {
-    background: url('/images/shop_by_season_03.jpg') center/cover no-repeat;
-    max-width: 400px;
-}
+
+  @media only screen and (min-width: 600px){
+    .container{
+        flex-direction: row;
+    }
+  }
 
 /* Product Card Styles */
-
 .product-container {
     display: flex;
     flex-wrap: nowrap; /* Ensure that the items stay in a single row without wrapping */

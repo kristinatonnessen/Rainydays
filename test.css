@@ -1,58 +1,29 @@
-header {
-    background-color: #0a364134;
-    padding: 20px 2%;
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-    border-bottom: 1px solid #ccc;
+    flex-direction: column;
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+.item {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .one {
+    background-image: url(images/shop_by_activity_03.jpg);
+  }
+  
+  .two {
+    background-image: url(images/shop_by_category_03.jpg);
+  }
+  
+  .three {
+    background-image: url(images/shop_by_season_03.jpg);
+  }
 
-.left-nav, .right-nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
 
-.left-nav {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.left-nav ul, .right-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.left-nav a, .right-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.logo {
-    flex-shrink: 0;
-    max-width: 100%;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.logo img {
-    max-width: 50%;
-    height: auto;
-}
-
-.right-nav {
-    margin-left: auto;
-}
+  @media only screen and (min-width: 600px){
+    .container{
+        flex-direction: row;
+    }
+  }
