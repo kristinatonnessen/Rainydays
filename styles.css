@@ -4,19 +4,50 @@ body {
     color: #0A3641;
     font-family: 'Inter', sans-serif;
     font-weight: 400; /* Regular */
-    margin: 0px
+    margin: 0 auto; 
 }
 
+/*HEADER*/
 header {
     background-color: #0a364134;
     padding: 8px 2%; 
-    display: inline;
-    justify-content: space-between;
+    display: flex;
+    justify-content:center;
     align-items: center;
     border-bottom: 1px solid #c0A3641c; 
     margin-bottom: 0px;
     margin-top: 0px;
 }
+@media only screen and (min-width: 600px){
+    .container{
+        flex-direction: row;
+    }
+  }
+
+  /* does not disappear while NOT hovering */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #3d565c82; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.246); 
+}
+
+.dropdown-menu li {
+    padding: 8px;
+    border-bottom: 1px solid #0a364142; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+
+}
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
 
 .nav {
     display: flex;
@@ -58,6 +89,7 @@ header {
     margin: 0 auto; 
     gap: 10px;
     padding: 50px;
+    margin-bottom: 8px;
 }
 
 .logo img {
@@ -80,7 +112,7 @@ header {
     height: auto;
 }
 
-/* AD CONTAINER */
+/* AD CONTAINERS */
 .ad-container {
     background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
     text-align: left;
@@ -90,14 +122,22 @@ header {
     margin-bottom: 30px;
 }
 
+.ad-container-shop {
+    background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
+    text-align: left;
+    color: #0A3641; 
+    padding: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 h1 {
-    font-weight: bold; 
+    font-weight: 400; 
     font-size: 3em;
     margin: 0;
 }
 
 h2 {
-    font-weight: lighter; 
+    font-weight: 300; 
     font-size: 2em;
     margin: 0;
 }
@@ -108,13 +148,13 @@ nav {
 }
 
 .ad-button {
-    background-color: #0a36415f; /* Button background color */
-    color: #0A3641; /* Button text color */
-    padding: 10px 20px; /* Adjust padding for the button */
-    font-size: 25px; /* Adjust font size for the button */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Add pointer cursor on hover */
+    background-color: #0a36415f;
+    padding: 10px 40px;
+    font-size: 25px;
+    border: none; 
+    cursor: pointer; 
     border-radius: 5px;
+    box-shadow: 0 4px 5px #0A3641(0, 0, 0, 0.246);
 }
 
 .ad-button:hover {
@@ -150,6 +190,7 @@ nav a {
     flex: 1;
     padding: 20px;
     margin: 1px;
+    color: #c3cdcd;
   }
   
   .activity {
@@ -174,17 +215,20 @@ nav a {
 /* Product Card Styles */
 .product-container {
     display: flex;
-    flex-wrap: nowrap; /* Ensure that the items stay in a single row without wrapping */
-    overflow-x: auto; /* Add horizontal scrolling if the content overflows */
+    flex-wrap: wrap; 
+    overflow-x: auto; 
     margin-bottom: 20px;
+    margin-top: 20px;
     color: #ffffff;
 }
+/*maybe make them be more centered when the site is smaller? 
+and make it a cut off instead and add a 6th product? */
 .product-card {
+    flex: 1;
     border: none; /* Adjust border color */
     padding: 0px;
     margin-bottom: 20px;
-    flex: 0 0 auto; /* Allow the product cards to grow and shrink as needed */
-    margin-right: 5px; /* Add spacing between the cards, adjust as needed */
+    margin-right: 1px; /* Add spacing between the cards, adjust as needed */
 }
 
 .product-card img {
@@ -246,50 +290,38 @@ button:hover {
 /* BRAND INFO */
 .brand-section {
     background: url('/images/about_text_mountain.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
-    text-align: center;
+    text-align: justify;
     align-items: center;
     color: #ffffff; 
     padding: 50px;
     margin-top: 0;
+    margin-bottom: 20px;
     font-weight: 200; /* not working? */
 }
 
 /* COMING SOON - Section Styles */
-.coming-soon-section {
+.coming-soon-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto; 
     padding: 20px;
-    text-align: center;
-    margin: 50px;
+    margin: 8px;
+    justify-content: center;
 }
 
 .images {
     flex: 1;
-    padding: auto;
-    margin: 10px;
-}
-.pic1 {
-    background-image: url(images/coming_soon_05.jpg)
-}
-.pic2 {
-    background-image: url(images/coming_soon_06.jpg)
-}
-.pic3 {
-    background-image: url(images/coming_soon_07.jpg)
-}
-.pic4 {
-    background-image: url(images/coming_soon_08.jpg)
-}
-
-.center-container {
-    margin-bottom: 20px;
+    border: 5px #c3cdcdcf;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
 
 /* FOOTER STYLES */
 footer {
     border-bottom: 1px solid #c0A3641c; 
     background-color: #5C6C72;
-    padding: 2px;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
@@ -297,10 +329,9 @@ footer {
 }
 
 .logo-section {
-    position: absolute;
+    position: relative;
     bottom: 0; 
     left: 50%; 
-    transform: translateX(-50%); 
 }
 
 /* FOOTER SECTIONS */
@@ -340,7 +371,7 @@ li {
 /* IMAGE CONTAINER STYLES */
 .image-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 

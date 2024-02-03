@@ -1,17 +1,30 @@
+.body {
+font-family: 'Inter', sans-serif;
+
+}
 
 .container{
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', sans-serif;
+
   }
-  
+  @media only screen and (min-width: 600px){
+    .container {
+        flex-direction: row;
+    }
+  }
 .item {
     flex: 1;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
+    max-width: 200px;
   }
   
 .one {
     background-color: #ffffff00;
+    
+    
   }
   
 .two {
@@ -29,8 +42,11 @@
 .five {
     background-color: #ffffff00;
   }
-  @media only screen and (min-width: 600px){
-      .container {
-          flex-direction: row;
-      }
+  
+.h2 {
+    font-weight: 200;
+}
+
+  .product {
+    max-width: 200px;
   }
