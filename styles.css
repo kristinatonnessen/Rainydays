@@ -116,7 +116,7 @@ header {
 
 /* AD CONTAINERS */
 .ad-container {
-    background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
+    background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; 
     text-align: left;
     color: #0A3641; 
     padding: 100px;
@@ -125,8 +125,7 @@ header {
 }
 
 .ad-container-shop {
-    background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
-    text-align: left;
+    background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; 
     color: #0A3641; 
     padding: 30px;
     margin-top: 0;
@@ -147,7 +146,7 @@ h2 {
 
 
 nav {
-    margin-top: 20px; /* Add margin to the navigation for spacing */
+    margin-top: 20px;
 }
 
 .ad-button {
@@ -161,7 +160,7 @@ nav {
 }
 
 .ad-button:hover {
-    background-color: #0a364195; /* Change background color on hover */
+    background-color: #0a364195;
 }
 
 /* Categories Section Styles */
@@ -227,12 +226,11 @@ nav a {
 
 .product-card {
     flex: 1;
-    border: none; /* Adjust border color */
+    border: none; 
     padding: 0px;
     margin-bottom: 20px;
-    margin-right: 1px; /* Add spacing between the cards, adjust as needed */
+    margin-right: 1px; 
 }
-
 .product-card img {
     max-width: 250px;
     height: auto;
@@ -248,7 +246,7 @@ nav a {
     .container{
         flex-direction: row;
      }
-    }
+}
 .product-name {
     color: #0A3641;
     font-size: 1.2em;
@@ -286,7 +284,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Set a height if needed */
+    height: 50px; 
 }
 
 /* BRAND INFO */
@@ -366,7 +364,7 @@ li {
 }
 
 .footer-section a:hover {
-    color: #0A3641; /* Change color on hover, adjust as needed */
+    color: #0A3641; 
 }
 
 
@@ -381,7 +379,7 @@ li {
     border: none;
     max-width: 200px;
     height: auto;
-    margin-right: 0px; /* Add margin between images */
+    margin-right: 0px; 
 }
 
 /* CONTACT PAGE */
