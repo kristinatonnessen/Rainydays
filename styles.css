@@ -146,7 +146,10 @@ h2 {
     font-size: 2em;
     margin: 0;
 }
-
+a {
+    text-decoration: none;
+    color: #0A3641;
+}
 
 nav {
     margin-top: 5px;
@@ -579,3 +582,25 @@ li {
   }
 
 
+.rocket-container {
+grid-template-columns: 300px 200px;
+grid-auto-rows: minmax(150px, auto);
+grid-gap: 10px;
+margin: 40px;
+grid-template-areas: 
+    "header header"
+    "content sidebar"
+    "content sidebar"
+
+}
+
+.rocket-1 {
+grid-area: header;
+margin-bottom: 20px;
+}
+.rocket-2 {
+grid-area: content;
+}
+.rocket-3 {
+grid-area: sidebar;
+}
