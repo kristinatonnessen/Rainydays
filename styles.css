@@ -30,7 +30,7 @@ header {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #3d565c82; 
+    background-color: #ffffffe0; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.246); 
 }
 
