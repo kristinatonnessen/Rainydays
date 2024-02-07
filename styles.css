@@ -7,27 +7,56 @@ body {
     margin: 0 auto; 
 }
 
-/*HEADER*/
-/*MAKE IT IN FLEX OR GRID TO ADAPT TO SMALLER 
-BROWSER SIZES? OR MAKE A DIFFERENT DROPDOWN MENU? */
-.header {
-    background-color: #0a364134;
-    padding: 8px 2%; 
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
-    justify-content:center;
-    align-items: start;
-    border-bottom: 1px solid #c0A3641c; 
-    margin-bottom: 0px;
-    margin-top: 0px;
+                        /*HEADER*/
+
+.logo-header {
+    max-width: 140px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
+.header {
+    color: #0A3641;
+    height: 15px;
+  }
+  
+  .header-container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0px;
+    display: grid;
+    grid-gap: 20px;
+    background-color: #0a36415f;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+   @media (min-width: 300px) {
+    .header-container { display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start; 
+    }
+  }
+  @media (min-width: 670px) {
+    .header-container {  
+        align-items: center;
+        justify-content: center; }
+  }
+  
+  @media (min-width: 960px) {
+    .header-container { grid-template-columns: repeat(9, 1fr); }
+  }
   
 .dropdown-menu {
     display: none;
     position: absolute;
     background-color: #ffffffe0; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.246); 
+    
 }
 
 .dropdown-menu li {
@@ -47,64 +76,31 @@ BROWSER SIZES? OR MAKE A DIFFERENT DROPDOWN MENU? */
 }
 
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.left-nav, .right-nav {
-    display: flex;
-    gap: 20px;
-    align-items: center; 
-    color: #0A3641;
-}
 
-.left-nav {
-    display: flex;
-    gap: 20px;
-    align-items: center; 
-    justify-content: flex-start; 
-}
-
-.left-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-}
-
-.left-nav a {
-    text-decoration: none;
-    color: #0A3641; 
-}
 
 
 .logo {
-    flex-shrink: 0; 
     max-width: 100px; 
     margin: 0 auto; 
     gap: 10px;
     padding: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 8px;
 }
 
 .logo img {
     max-width: 100%;
-    display: top; 
+    display: flex;
+    flex-shrink: 0; 
     gap: 10px;
     margin-top: 0px;
 }
 
 .icons {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     max-width: 100%;
     padding: 0px;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 
@@ -158,7 +154,8 @@ nav {
     border: none; 
     cursor: pointer; 
     border-radius: 5px;
-    box-shadow: 0 4px 5px #0A3641(0, 0, 0, 0.246);
+    box-shadow: 0 4px 5px #0A3641;
+    transition: background-color 0.3s ease;
 }
 
 .ad-button:hover {
@@ -269,6 +266,8 @@ button {
     border-radius: 2px; 
     cursor: pointer;
     margin-bottom: 70px;
+    transition: background-color 0.3s ease;
+
 }
 
 button:hover {
@@ -324,7 +323,7 @@ footer {
 }
 
 .logo-section {
-    position: center;
+    position: fixed;
     bottom: 0; 
     left: 50%; 
     margin: 10px;
@@ -381,7 +380,7 @@ li {
 
 /* CONTACT PAGE */
 .contact-section {
-    align-items: left;
+    align-items: start;
     
 }
 
@@ -405,12 +404,12 @@ li {
     margin: 60px;
   }
   .google-map-1 {
-    border: 2;
+    border: 0;
     width: 100%;
     height: 200px;
   }
   .google-map-2 {
-    border: 2;
+    border: 0;
     width: 100%;
     height: 500px;
   }
@@ -442,7 +441,7 @@ li {
   /* GRID ABOUT */
 .grid-container-about {
     display: grid;
-    grid-template-columns: 2 2;
+    grid-template-columns: 2fr, 2fr;
     grid-auto-rows: minmax(150px, auto);
     grid-gap: 20px;
     margin: 60px;
@@ -481,11 +480,11 @@ li {
                           /* PRODUCT PAGE GRID */
 
 .cards {
-    margin: 10pxpx;
+    margin: 10px;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(200px auto);
+    grid-auto-rows: minmax(200px, auto);
     justify-content: center;
 
 }
@@ -578,8 +577,11 @@ li {
 .size-options label {
     display: inline-block;
     margin-right: 10px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     cursor: pointer;
+    border: 1px solid #0a364163;
+    transition: background-color 0.3s ease;
+
 }
 
 .size-options input[type="radio"]:checked + label {
@@ -599,6 +601,8 @@ li {
 
 .quantity-input {
     width: 155px; height: 30px;
+    font-size: larger;
+    font-weight: 200;
     text-align: center; 
     background-color: #0a364120;
 
@@ -690,7 +694,7 @@ label {
 
 
 @media(min-width:840px) {
-    .header, footer {
+    .footer {
         display: flex;
         flex-wrap: wrap;
     }
