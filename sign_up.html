@@ -19,7 +19,8 @@
                     <a href="#">SHOP</a>
                     <ul class="dropdown-menu">
                         <li><a href="shop_men.html">Men's Apparel</a></li>
-                        <li><a href="shop_women.html">Women's Apparel</a></li></ul>
+                        <li><a href="shop_women.html">Women's Apparel</a></li>
+                    </ul>
                 </li>
             </ul>
             <ul class="header-3">
@@ -30,7 +31,7 @@
             </ul>
             <div class="header-5">
                 <div class="logo">
-                    <img src="/images/Rainydays_Logo_Cut.png" alt="Logo for header" class="logo-image">
+                    <img src="/images/Rainydays_Logo_Cut.png" alt="Logo for header" class="logo-image" />
                 </div>
             </div>
 
@@ -40,18 +41,50 @@
             <ul class="header-7">
                 <li><a href="sign_up.html">SIGN UP</a></li>
             </ul>
-                <div class="icons">
-                    <ul class="header-8">
-                        <a href="#" class="icon"><img src="/icons/profile_96x96_03.png" alt="Profile Icon" /></a></ul> <!-- DO THESE NEED TO BE CODES AS WELL? IF SO CAN I CUT THE PROFILE? -->
-                    <ul class="header-9">
-
-                        <a href="#" class="icon"><img src="/icons/cart_96x96_02.png" alt="Shopping Cart Icon" /></a></ul> <!-- DO THESE NEED TO BE CODES AS WELL? -->
-                </div>
-            </ul>
+            <div class="icons">
+                <ul class="header-8">
+                    <li><a href="#" class="icon"><img src="/icons/profile_96x96_03.png" alt="Profile Icon" /></a></li>
+                </ul> 
+                <ul class="header-9">
+                    <li><a href="cart.html" class="icon"><img src="/icons/cart_96x96_02.png" alt="Shopping Cart Icon" /></a></li>
+                </ul> 
+            </div>
         </nav>
-    </header>
-    <main>
 
+
+    </header>
+
+    <main>
+   
+        <div class="sign-container">
+            <h1>SIGN UP FOR AN ACCOUNT</h1>
+            <form>
+                <div class="contact-details-person">
+                    <div class="personal-detail">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="personal-detail">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name">
+                    </div>
+                    <div class="personal-detail">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="personal-detail">
+                        <label for="pass">PASSWORD (8 characters minimum)</label>
+                        <input type="password" id="pass" name="password" minlength="8" required />                
+                    </div>
+                    <button class="form-button" a href="index.html">LOG IN</button>
+                </div>
+            </form>
+    
+            <div class="center-container">
+            <p>Already have an account? <a href="login.html">Log in here</a></p></div>
+        </div>
+    
+    
     </main>
 
     <footer>
