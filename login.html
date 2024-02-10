@@ -10,45 +10,47 @@
 </head>
 
 <body>
-<header>
-    <div class="header-container">
-        <div class="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        
-        <div class="nav-links">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="shop_men.html">MENS APPAREL</a></li>
-                <li><a href="shop_women.html">WOMENS APPAREL</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
+    <header>
         <nav class="header">
-            <ul>
+            <div class="phone-menu-section">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <div class="burger-menu">
+                    <ul class="nav-links"> 
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="shop_men.html">MENS APPAREL</a></li>
+                        <li><a href="shop_women.html">WOMENS APPAREL</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="sign_up.html">SIGN UP</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="header-container">
                 <li><a href="index.html">HOME</a></li>
                 <li class="dropdown">
                     <a href="#">SHOP</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="shop_men.html">Men's Apparel</a></li>
-                        <li><a href="shop_women.html">Women's Apparel</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                        <a href="shop_men.html">MENS APPAREL</a>
+                        <a href="shop_women.html">WOMENS APPAREL</a>
+                    </div>
                 </li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-        
-        <div class="icons">
-            <ul>
-                <li><a href="cart.html" class="icon"><img src="/icons/cart_96x96_02.png" alt="Shopping Cart Icon" /></a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+
+            </div>
+            <ul class="icons">
+                <li><a href="cart.html" class="icon"><img src="/icons/cart_96x96_02.png" alt="Shopping Cart Icon"/></a></li>
             </ul> 
-        </div>
-    </div>
-</header>
+        </nav>
+    </header>
 
 
 
@@ -66,7 +68,7 @@
                     <label for="pass">PASSWORD (8 characters minimum)</label>
                     <input type="password" id="pass" name="password" minlength="8" required />                
                 </div>
-                <button class="form-button" >LOGIN</button>
+                <button class="form-button" a href="index.html">LOGIN</button>
             </div>
         </form>
 
@@ -81,7 +83,7 @@
 
 
 <footer>
-    <section class="footer-section">
+    <div class="footer-section">
         <h4 class="h2">CONTACT</h4>
         <address>
             <p><a href="mailto:info@rainydays.com">info@rainydays.com</a></p>
@@ -89,39 +91,38 @@
             <p><a href="/location">View in Map</a></p>
             <p><a href="/chat">Start Live Chat</a></p>
         </address>
-    </section>
+    </div>
 
-    <section class="footer-section">
+    <div class="footer-section">
         <h4 class="h2">ABOUT</h4>
         <ul>
-            <li><a href="/environment">Environment</a></li>
-            <li><a href="/founder">Founder</a></li>
-            <li><a href="/goals">Goals</a></li>
+            <li><a href="/environment"><p>Environment</p></a></li>
+            <li><a href="/founder"><p>Founder</p></a></li>
+            <li><a href="/goals"><p>Goals</p></a></li>
         </ul>
-    </section>
+    </div>  
 
-    <section class="logo2">
-            <img src="images/RainyDays_Logo.png" alt="RainyDays Logo">
-    </section>
-
-    <section class="footer-section">
+    <div class="footer-section">
         <h4 class="h2">RAINYDAYS</h4>
         <ul>
-            <li><a href="/community">Community</a></li>
-            <li><a href="/newsletter">Newsletter</a></li>
-            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="/community"><p>Community</p></a></li>
+            <li><a href="/newsletter"><p>Newsletter</p></a></li>
+            <li><a href="/jobs"><p>Jobs</p></a></li>
         </ul>
-    </section>
+    </div>
 
-    <section class="footer-section">
-        <h4 class="h2">SOCIALS</h4>
+    <div class="footer-section">
+        <h4 class="h2">SOCIAL MEDIA</h4>
         <ul>
-            <li><a href="https://www.instagram.com/rainydays/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.facebook.com/rainydays/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.snapchat.com/rainydays/" target="_blank">Snapchat</a></li>
-            <li><a href="https://www.tiktok.com/rainydays/" target="_blank">TikTok</a></li>
+            <li><a href="/community"><p>Instagram</p></a></li>
+            <li><a href="/newsletter"><p>Facebook</p></a></li>
+            <li><a href="/jobs"><p>Twitter</p></a></li>
+            <li><a href="/jobs"><p>TikTok</p></a></li>
         </ul>
-    </section>
+    </div>
+    <section class="logo2-section">
+        <img src="images/RainyDays_Logo.png" alt="RainyDays Logo">
+    </section>  
 </footer>
 </body>
 </html>

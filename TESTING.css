@@ -1,125 +1,60 @@
-html { 
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    color: #0A3641;
-    font-weight: 400; /* Regular */}
-body { 
-    background-color: #c3cdcdcf;
-    margin: 0px;
+/* Style the container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
 }
 
-
-                    /* HAMBURGER */
-
-#menu-toggle {
-    position: absolute;
-    
-}
-
-
-.menu-icon {
-    cursor: pointer;
-    display: block;
-    width: 40px; 
-    height: 50px; 
-    background-color: #00000000;
-    position: absolute;
-    margin: 10px;
-}
-
-
-.bar {
-    display: block;
-    width: 30px; 
-    height: 2px; 
-    background-color: #0A3641;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 3px;
-}
-
-/* Positioning for individual bars */
-.bar:nth-child(1) {
-    top: 25%;
-}
-.bar:nth-child(3) {
-    top: 75%;
-}
-
-.burger-container {
-    display: none;
-}
-
-#menu-toggle:checked + .burger-container {
-    display: block;
-}
-
-
-
-/* Media query for small screens */
-@media (min-width: 768px) {
-    .burger-container {
-        display: none;
-    }
-}
-@media (max-width: 767px) {
-  .header {
-      display: none;
-  }
-}
-
-
-
-
-
-
-
-.logo-header {
-    max-width: 140px;
-    height: 40px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-header {
-    color: #0A3641;
-    padding: 20px;
-    height: 15px;
-  }
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
   
-  .header-container {
-    max-width: 100%;
-    padding: 5px;
-    margin: 0px;
-    display: grid;
-    grid-gap: 0px;
-    background-color: #0a36415f;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #ffffffe0; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.246);
-    text-align: start;
 }
 
-.dropdown-menu li {
-    padding: 8px;
-    border-bottom: 1px solid #0a364142; 
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-.dropdown-menu a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    padding: 10px;
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #695a5a;
 }
 
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
