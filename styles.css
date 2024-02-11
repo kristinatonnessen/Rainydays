@@ -263,6 +263,7 @@ nav a {
     margin-top: 70px;
     color: #ffffffc7;
     max-width: 100%;
+    height: 20px;
   }
   .activity {
     background-image: url(images/activity_05.png);
@@ -790,6 +791,7 @@ label {
     }
     .item {
         margin-top: 0;
+        padding: 20px;
     }
     .grid-container-about {
         display: flex;
