@@ -784,6 +784,9 @@ label {
     .bar {
         display: block;
     }
+    .ad-container {
+        padding: 50px;
+    }
     .product-container {
         display: inline;
         margin: 0;
