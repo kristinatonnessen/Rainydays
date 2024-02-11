@@ -498,12 +498,14 @@ footer p {
     border-radius: 3px;
     width: 300px; height: 200px;
     box-shadow: 0 5px 5px #0a364179;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
   }
   .google-map-2 {
     border: 1px solid #0a364136;
     border-radius: 3px;
-    width: 300px; height: 350px;
+    width: 300px; height: 450px;
     box-shadow: 0 5px 5px #0a364179;
   }
 
@@ -895,6 +897,9 @@ label {
     }
     .total {
         font-size: small;
+    }
+    .sign-container {
+        margin: 40px;
     }
 }
 @media (min-width: 801px) {
