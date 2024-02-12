@@ -181,7 +181,7 @@ a.icon {
 
                 /* AD CONTAINERS */
 .ad-container {
-    background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; 
+    background: url('images/ad_man_on_mountain_02.jpg') center/cover no-repeat; 
     text-align: left;
     color: #0A3641; 
     padding: 100px;
@@ -189,7 +189,7 @@ a.icon {
     margin-bottom: 30px;
 }
 .ad-container-shop {
-    background: url('/images/ad_man_on_mountain_02.jpg') center/cover no-repeat; 
+    background: url('images/ad_man_on_mountain_02.jpg') center/cover no-repeat; 
     color: #0A3641; 
     padding: 30px;
     margin-top: 0;
