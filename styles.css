@@ -182,7 +182,7 @@ a.icon {
                 /* AD CONTAINERS */
 .ad-container {
     background: url('images/ad_man_on_mountain_02.jpg') 
-    center/cover no-repeat; 
+        center/cover no-repeat; 
     text-align: left;
     color: #0A3641; 
     padding: 100px;
@@ -191,7 +191,7 @@ a.icon {
 }
 .ad-container-shop {
     background: url('images/ad_man_on_mountain_02.jpg') 
-    center/cover no-repeat; 
+        center/cover no-repeat; 
     color: #0A3641; 
     padding: 30px;
     margin-top: 0;
@@ -740,6 +740,8 @@ label {
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 .remove-button:hover {
     background-color: #0A3641;
