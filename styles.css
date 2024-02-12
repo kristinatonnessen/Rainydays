@@ -2,7 +2,7 @@ body {
     background-color: #c3cdcdcf;
     color: #0A3641;
     font-family: 'Inter', sans-serif;
-    font-weight: 400; /* Regular */
+    font-weight: 400;
     margin: 0 auto; 
 }
 
@@ -181,7 +181,8 @@ a.icon {
 
                 /* AD CONTAINERS */
 .ad-container {
-    background: url('images/ad_man_on_mountain_02.jpg') center/cover no-repeat; 
+    background: url('images/ad_man_on_mountain_02.jpg') 
+    center/cover no-repeat; 
     text-align: left;
     color: #0A3641; 
     padding: 100px;
@@ -189,7 +190,8 @@ a.icon {
     margin-bottom: 30px;
 }
 .ad-container-shop {
-    background: url('images/ad_man_on_mountain_02.jpg') center/cover no-repeat; 
+    background: url('images/ad_man_on_mountain_02.jpg') 
+    center/cover no-repeat; 
     color: #0A3641; 
     padding: 30px;
     margin-top: 0;
@@ -354,7 +356,8 @@ button:hover {
 
                 /* BRAND INFO */
 .brand-section {
-    background: url('images/about_text_mountain.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
+    background: url('images/about_text_mountain.jpg') 
+    center/cover no-repeat; 
     text-align: center;
     align-items: center;
     color: #ffffff; 
@@ -880,11 +883,17 @@ label {
   https://www.youtube.com/watch?v=fYq5PXgSsbE
   https://scrimba.com/scrim/cNq68Wf2?pl=paaBbTa
   https://icon-icons.com/
-  https://www.linkedin.com/learning/html-essential-training-4/paragraphs?autoSkip=true&resume=false&u=43268076
-  https://www.linkedin.com/learning/programming-foundations-fundamentals-3/introduction-to-variables-and-data-types?autoSkip=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56db2b643dd5596be4e4989b&resume=false&u=43268076
+  https://www.linkedin.com/learning/html-essential-training-
+  4/paragraphs?autoSkip=true&resume=false&u=43268076
+  https://www.linkedin.com/learning/programming-foundations-
+  fundamentals-3/introduction-to-variables-and-data-types?autoSkip
+  =true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56db2b643dd5596
+  be4e4989b&resume=false&u=43268076
   https://www.zalando.no/dame-home/
   https://www.xxl.no/
-  https://www.hellyhansen.com/no_no/?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAiA_aGuBhACEiwAly57MWlMGx6GK4mUeGXQk4nce5bfCRHtXEKAZMJVuJ-TYJMRkr8WUXrgqxoCh4EQAvD_BwE&gclsrc=aw.ds
+  https://www.hellyhansen.com/no_no/?gclsrc=aw.ds&gad_source=1&gclid=
+  CjwKCAiA_aGuBhACEiwAly57MWlMGx6GK4mUeGXQk4nce5bfCRHtXEKAZMJVuJ-
+  TYJMRkr8WUXrgqxoCh4EQAvD_BwE&gclsrc=aw.ds
   https://www.sportmann.no/merker/helly-hansen
 
   */
