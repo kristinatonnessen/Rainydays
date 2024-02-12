@@ -349,7 +349,7 @@ button:hover {
 
                 /* BRAND INFO */
 .brand-section {
-    background: url('/images/about_text_mountain.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
+    background: url('images/about_text_mountain.jpg') center/cover no-repeat; /* Replace 'your-image.jpg' with the path to your image */
     text-align: center;
     align-items: center;
     color: #ffffff; 
