@@ -645,13 +645,13 @@ margin: 10px;
 
                         /* REVIEWS */
 .reviews-section {
-    padding: 0px;
+    padding: 20px;
     align-content: start;
 }
 .review {
     border-top: 1px solid #0a364118;
-    padding: 10px;
-    margin: 20px; 
+    padding: 0px;
+    margin: 0px; 
 }
 .reviewer-info {
     display: flex;
@@ -784,6 +784,10 @@ label {
     .bar {
         display: block;
     }
+    .icons {
+        padding-right: 15px;
+        padding-top: 0px;
+    }
     .ad-container {
         padding: 50px;
     }
@@ -837,7 +841,7 @@ label {
         max-width: 230px;
     }
     .review {
-        margin: 10px;
+        margin: 0px;
     }
     .star {
         font-size: 15px;
