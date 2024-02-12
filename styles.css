@@ -792,8 +792,9 @@ label {
         padding: 50px;
     }
     .product-container {
-        display: inline;
-        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
         width: 100%;
     }
     .item {
