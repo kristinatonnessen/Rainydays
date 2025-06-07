@@ -3,7 +3,7 @@ const mensProducts = [
   {
     name: "Rocket Jacket",
     brand: "RAINYDAYS",
-    image: "mens_jackets/Rocket_jacket_05.jpg",
+    image: "../mens_jackets/Rocket_jacket_05.jpg",
     mainImage: "../mens_jackets/Rocket_jacket_05.jpg",
     thumbnails: [
       "../mens_jackets/Rocket_jacket_05.jpg",
@@ -19,14 +19,12 @@ const mensProducts = [
     to keep you dry in every situation. With a light and moveable fabric that 
     isolates in every condition, from the streets to high mountains, 
     this is the jacket you want for your adventures.`,
-    details: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-    Nihil quia natus officia qui? Fugit tempore aliquam cupiditate enim unde 
-    accusamus nostrum odit. Quidem ex temporibus iusto iure recusandae ut quas?`
+    details: `Water and wind resistant,breathable, and features a detachable hood, adjustable cuffs, and multiple pockets.`
   },
     {
     name: "Boarding Jacket",
     brand: "RAINYDAYS",
-    image: "mens_jackets/Boarding_Jacket_02.jpg",
+    image: "../mens_jackets/Boarding_Jacket_02.jpg",
     mainImage: "../mens_jackets/Boarding_Jacket_02.jpg",
     thumbnails: [
         "../mens_jackets/Boarding_Jacket_02.jpg",
@@ -42,7 +40,7 @@ const mensProducts = [
   {
     name: "Drop Jacket",
     brand: "RAINYDAYS",
-    image: "mens_jackets/Drop_Jacket_02.jpg",
+    image: "../mens_jackets/Drop_Jacket_02.jpg",
     mainImage: "../mens_jackets/Drop_Jacket_02.jpg",
     thumbnails: [
         "../mens_jackets/Drop_Jacket_02.jpg",
@@ -58,7 +56,7 @@ const mensProducts = [
   {
     name: "Pump Jacket",
     brand: "RAINYDAYS",
-    image: "mens_jackets/Pump_Jacket_02.jpg",
+    image: "../mens_jackets/Pump_Jacket_02.jpg",
     mainImage: "../mens_jackets/Pump_Jacket_02.jpg",
     thumbnails: [
         "../mens_jackets/Pump_Jacket_02.jpg",
@@ -74,7 +72,7 @@ const mensProducts = [
   {
     name: "Sway Jacket",
     brand: "RAINYDAYS",
-    image: "mens_jackets/Sway_Jacket_02.jpg",
+    image: "../mens_jackets/Sway_Jacket_02.jpg",
     mainImage: "../mens_jackets/Sway_Jacket_02.jpg",
     thumbnails: [
         "../mens_jackets/Sway_Jacket_02.jpg",
@@ -93,7 +91,7 @@ const womensProducts = [
   {
     name: "Bomb Jacket",
     brand: "RAINYDAYS",
-    image: "womens_jackets/Bomb_Jacket_02.jpg",
+    image: "../womens_jackets/Bomb_Jacket_02.jpg",
     mainImage: "../womens_jackets/Bomb_Jacket_02.jpg",
     thumbnails: [
       "../womens_jackets/Bomb_Jacket_02.jpg",
@@ -109,7 +107,7 @@ const womensProducts = [
   {
     name: "Braid Jacket",
     brand: "RAINYDAYS",
-    image: "womens_jackets/Braid_Jacket_02.jpg",
+    image: "../womens_jackets/Braid_Jacket_02.jpg",
     mainImage: "../womens_jackets/Braid_Jacket_02.jpg",
     thumbnails: [
       "../womens_jackets/Braid_Jacket_02.jpg",
@@ -125,7 +123,7 @@ const womensProducts = [
   {
     name: "Frost Jacket",
     brand: "RAINYDAYS",
-    image: "womens_jackets/Frost_Jacket_02.jpg",
+    image: "../womens_jackets/Frost_Jacket_02.jpg",
     mainImage: "../womens_jackets/Frost_Jacket_02.jpg",
     thumbnails: [
       "../womens_jackets/Frost_Jacket_02.jpg",
@@ -141,7 +139,7 @@ const womensProducts = [
   {
     name: "Haze Jacket",
     brand: "RAINYDAYS",
-    image: "womens_jackets/Haze_Jacket_02.jpg",
+    image: "../womens_jackets/Haze_Jacket_02.jpg",
     mainImage: "../womens_jackets/Haze_Jacket_02.jpg",
     thumbnails: [
       "../womens_jackets/Haze_Jacket_02.jpg",
@@ -157,7 +155,7 @@ const womensProducts = [
   {
     name: "Nordic Jacket",
     brand: "RAINYDAYS",
-    image: "womens_jackets/Nordic_Jacket_05.png",
+    image: "../womens_jackets/Nordic_Jacket_05.png",
     mainImage: "../womens_jackets/Nordic_Jacket_05.png",
     thumbnails: [
       "../womens_jackets/Nordic_Jacket_05.png",
