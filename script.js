@@ -3,15 +3,15 @@ const mensProducts = [
   {
     name: "Rocket Jacket",
     brand: "RAINYDAYS",
-    image: "../mens_jackets/Rocket_jacket_05.jpg",
-    mainImage: "../mens_jackets/Rocket_jacket_05.jpg",
+    image: "mens_jackets/Rocket_jacket_05.jpg",
+    mainImage: "mens_jackets/Rocket_jacket_05.jpg",
     thumbnails: [
-      "../mens_jackets/Rocket_jacket_05.jpg",
-      "../mens_jackets/Rocket_Jacket_06.jpg",
-      "../mens_jackets/Rocket_Jacket_07.jpg",
-      "../mens_jackets/Rocket_Jacket_08.jpg"
+      "mens_jackets/Rocket_jacket_05.jpg",
+      "mens_jackets/Rocket_Jacket_06.jpg",
+      "mens_jackets/Rocket_Jacket_07.jpg",
+      "mens_jackets/Rocket_Jacket_08.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -24,13 +24,13 @@ const mensProducts = [
     {
     name: "Boarding Jacket",
     brand: "RAINYDAYS",
-    image: "../mens_jackets/Boarding_Jacket_02.jpg",
-    mainImage: "../mens_jackets/Boarding_Jacket_02.jpg",
+    image: "mens_jackets/Boarding_Jacket_02.jpg",
+    mainImage: "mens_jackets/Boarding_Jacket_02.jpg",
     thumbnails: [
-        "../mens_jackets/Boarding_Jacket_02.jpg",
-        "../mens_jackets/Boarding_Jacket_03.jpg"
+        "mens_jackets/Boarding_Jacket_02.jpg",
+        "mens_jackets/Boarding_Jacket_03.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -40,13 +40,13 @@ const mensProducts = [
   {
     name: "Drop Jacket",
     brand: "RAINYDAYS",
-    image: "../mens_jackets/Drop_Jacket_02.jpg",
-    mainImage: "../mens_jackets/Drop_Jacket_02.jpg",
+    image: "mens_jackets/Drop_Jacket_02.jpg",
+    mainImage: "mens_jackets/Drop_Jacket_02.jpg",
     thumbnails: [
-        "../mens_jackets/Drop_Jacket_02.jpg",
-        "../mens_jackets/Drop_Jacket_03.jpg"
+        "mens_jackets/Drop_Jacket_02.jpg",
+        "mens_jackets/Drop_Jacket_03.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -56,13 +56,13 @@ const mensProducts = [
   {
     name: "Pump Jacket",
     brand: "RAINYDAYS",
-    image: "../mens_jackets/Pump_Jacket_02.jpg",
-    mainImage: "../mens_jackets/Pump_Jacket_02.jpg",
+    image: "mens_jackets/Pump_Jacket_02.jpg",
+    mainImage: "mens_jackets/Pump_Jacket_02.jpg",
     thumbnails: [
-        "../mens_jackets/Pump_Jacket_02.jpg",
-        "../mens_jackets/Pump_Jacket_03.jpg"
+        "mens_jackets/Pump_Jacket_02.jpg",
+        "mens_jackets/Pump_Jacket_03.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -72,13 +72,13 @@ const mensProducts = [
   {
     name: "Sway Jacket",
     brand: "RAINYDAYS",
-    image: "../mens_jackets/Sway_Jacket_02.jpg",
-    mainImage: "../mens_jackets/Sway_Jacket_02.jpg",
+    image: "mens_jackets/Sway_Jacket_02.jpg",
+    mainImage: "mens_jackets/Sway_Jacket_02.jpg",
     thumbnails: [
-        "../mens_jackets/Sway_Jacket_02.jpg",
-        "../mens_jackets/Sway_Jacket_03.jpg"
+        "mens_jackets/Sway_Jacket_02.jpg",
+        "mens_jackets/Sway_Jacket_03.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
