@@ -91,13 +91,13 @@ const womensProducts = [
   {
     name: "Bomb Jacket",
     brand: "RAINYDAYS",
-    image: "../womens_jackets/Bomb_Jacket_02.jpg",
-    mainImage: "../womens_jackets/Bomb_Jacket_02.jpg",
+    image: "womens_jackets/Bomb_Jacket_02.jpg",
+    mainImage: "womens_jackets/Bomb_Jacket_02.jpg",
     thumbnails: [
-      "../womens_jackets/Bomb_Jacket_02.jpg",
-      "../womens_jackets/Bomb_Jacket_03.jpg"
+      "womens_jackets/Bomb_Jacket_02.jpg",
+      "womens_jackets/Bomb_Jacket_03.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -107,13 +107,13 @@ const womensProducts = [
   {
     name: "Braid Jacket",
     brand: "RAINYDAYS",
-    image: "../womens_jackets/Braid_Jacket_02.jpg",
-    mainImage: "../womens_jackets/Braid_Jacket_02.jpg",
+    image: "womens_jackets/Braid_Jacket_02.jpg",
+    mainImage: "womens_jackets/Braid_Jacket_02.jpg",
     thumbnails: [
-      "../womens_jackets/Braid_Jacket_02.jpg",
-      "../womens_jackets/Braid_Jacket_03.jpg"
+      "womens_jackets/Braid_Jacket_02.jpg",
+      "womens_jackets/Braid_Jacket_03.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -123,13 +123,13 @@ const womensProducts = [
   {
     name: "Frost Jacket",
     brand: "RAINYDAYS",
-    image: "../womens_jackets/Frost_Jacket_02.jpg",
-    mainImage: "../womens_jackets/Frost_Jacket_02.jpg",
+    image: "womens_jackets/Frost_Jacket_02.jpg",
+    mainImage: "womens_jackets/Frost_Jacket_02.jpg",
     thumbnails: [
-      "../womens_jackets/Frost_Jacket_02.jpg",
-      "../womens_jackets/Frost_Jacket_03.jpg"
+      "womens_jackets/Frost_Jacket_02.jpg",
+      "womens_jackets/Frost_Jacket_03.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -139,13 +139,13 @@ const womensProducts = [
   {
     name: "Haze Jacket",
     brand: "RAINYDAYS",
-    image: "../womens_jackets/Haze_Jacket_02.jpg",
-    mainImage: "../womens_jackets/Haze_Jacket_02.jpg",
+    image: "womens_jackets/Haze_Jacket_02.jpg",
+    mainImage: "womens_jackets/Haze_Jacket_02.jpg",
     thumbnails: [
-      "../womens_jackets/Haze_Jacket_02.jpg",
-      "../womens_jackets/Haze_Jacket_03.jpg"
+      "womens_jackets/Haze_Jacket_02.jpg",
+      "womens_jackets/Haze_Jacket_03.jpg"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -155,13 +155,13 @@ const womensProducts = [
   {
     name: "Nordic Jacket",
     brand: "RAINYDAYS",
-    image: "../womens_jackets/Nordic_Jacket_05.png",
-    mainImage: "../womens_jackets/Nordic_Jacket_05.png",
+    image: "womens_jackets/Nordic_Jacket_05.png",
+    mainImage: "womens_jackets/Nordic_Jacket_05.png",
     thumbnails: [
-      "../womens_jackets/Nordic_Jacket_05.png",
-      "../womens_jackets/Nordic_Jacket_06.png"
+      "womens_jackets/Nordic_Jacket_05.png",
+      "womens_jackets/Nordic_Jacket_06.png"
     ],
-    link: "../shop/product.html",
+    link: "shop/product.html",
     price: "1990 kr.",
     size: ["S", "M", "L", "XL"],
     quantity: [1, 2, 3],
@@ -235,11 +235,11 @@ function renderSingleProduct() {
     <div class="card-1">
       <div class="image-gallery">
         <div class="main-image">
-          <img src="${product.mainImage}" alt="${product.name}" id="main-image">
+          <img src="../${product.mainImage}" alt="${product.name}" id="main-image">
         </div>
         <div class="thumbnail-images">
           ${product.thumbnails
-            .map(img => `<img src="${img}" alt="${product.name}" class="thumbnail">`)
+            .map(img => `<img src="../${img}" alt="${product.name}" class="thumbnail">`)
             .join("")}
         </div>
       </div>
